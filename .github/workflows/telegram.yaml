@@ -9,7 +9,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
       - name: Send Telegram message
-        uses: sarkisovTu/github-action-telegram@feature/telegram-bot
+        uses: sarkisovTu/github-action-telegram@main
         with:
           telegramBotToken: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           telegramChatId: ${{ secrets.TELEGRAM_CHAT_ID }}
